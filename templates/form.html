@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .teste{
+            border: none;
+            border-bottom: 2px solid blue;
+        }
+
+        .teste:focus{
+            outline: none;
+            border-bottom: 2px solid red;
+        }
+
+        .botao{
+            margin-top: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="/envio" method="post"></form>
+    <div>
+        <label for="">Usuário</label>
+        <input class='teste' type="text" name="nome" id="nome" required>
+    </div>
+
+    <div>
+        <label for="">Senha</label>
+        <input class='teste' type="password" name="senha" id="senha">
+    </div>
+    <div>
+        <input type="date" name="data" id="data">
+    </div>
+    <div>
+        <input class='botao'type="button" value="Logar">
+    </div>
+</body>
+</html>
