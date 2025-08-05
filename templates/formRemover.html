@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .teste{
+            border: none;
+            border-bottom: 2px solid pink;
+        }
+
+        .teste:focus{
+            outline: none;
+            border-bottom: 2px solid pink;
+        }
+
+        .botao{
+            margin: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <form action="/formRemover" method="post">
+        <div>
+            <label for="">Usuário</label>
+            <input class='teste' type="text" name="nome" id="nome">
+        </div>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+    </form>
+    </div>
+</body>
+</html>

@@ -39,3 +39,28 @@ def envio():
     cnx.close() #fecho a conexão
 
     return render_template('sucesso.html')
+
+
+@app.route('/remover')
+def remove():
+    return render_template("formRemover.html")
+
+
+@app.route('/formRemover', methods=["POST"])
+def remover():
+    n = request.form.get('nome')
+    dados = (n,)
+
+    cnx = conectarBD()
+
+    cursor = cnx.cursor()
+    sql = "DELETE from pessoa\
+        WHERE nome = %s"  #nessa linha de codigo, nome é a coluna
+    
+
+    cursor.execute(sql, dados)
+    cnx.commit()
+    
+    cnx.close()
+    return render_template('sucesso.html')
+
