@@ -7,16 +7,16 @@
     <style>
         .teste{
             border: none;
-            border-bottom: 2px solid blue;
+            border-bottom: 2px solid pink;
         }
 
         .teste:focus{
             outline: none;
-            border-bottom: 2px solid red;
+            border-bottom: 2px solid pink;
         }
 
         .botao{
-            margin-top: 10px;
+            margin: 10px;
         }
 
 
@@ -30,14 +30,16 @@
     </div>
 
     <div>
-        <label for="">Senha</label>
-        <input class='teste' type="password" name="senha" id="senha">
+        <label for="">Cidade</label>
+        <input class='teste' type='text' name="cidade" id="cidade">
     </div>
     <div>
-        <input type="date" name="data" id="data">
+        <label for="nascimento">Data de nascimento </label>
+        <input type="date" name="nascimento" id="nascimento">
     </div>
     <div>
-        <input class='botao'type="button" value="Logar">
+        <input class='botao'type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
     </div>
 </body>
 </html>
