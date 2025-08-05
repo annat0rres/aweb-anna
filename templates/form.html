@@ -23,23 +23,24 @@
     </style>
 </head>
 <body>
-    <form action="/envio" method="post"></form>
-    <div>
-        <label for="">Usuário</label>
-        <input class='teste' type="text" name="nome" id="nome" required>
-    </div>
+    <form action="/envioFormulario" method="post">
+        <div>
+            <label for="">Usuário</label>
+            <input class='teste' type="text" name="nome" id="nome">
+        </div>
 
-    <div>
-        <label for="">Cidade</label>
-        <input class='teste' type='text' name="cidade" id="cidade">
-    </div>
-    <div>
-        <label for="nascimento">Data de nascimento </label>
-        <input type="date" name="nascimento" id="nascimento">
-    </div>
-    <div>
-        <input class='botao'type="submit" value="Enviar">
-        <input type="reset" value="Apagar">
+        <div>
+            <label for="">Cidade</label>
+            <input class='teste' type='text' name="cidade" id="cidade">
+        </div>
+        <div>
+            <label for="nascimento">Data de nascimento </label>
+            <input type="date" name="nascimento" id="nascimento">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+    </form>
     </div>
 </body>
 </html>
